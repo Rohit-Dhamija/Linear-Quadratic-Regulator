@@ -154,7 +154,7 @@ def my_mainfunc():
 
 																				
 		if close_index == total_path_points:
-			theta_path = math.atan( (path[close_index][1]-path[close_index-1][1]) / (path[close_index][0]-path[close_index-1][1]+ 1e-10) )   
+			theta_path = math.atan( (path[close_index][1]-path[close_index-1][1]) / (path[close_index][0]-path[close_index-1][0]+ 1e-10) )   
 		else:
 			theta_path = math.atan( (path[close_index+1][1]-path[close_index][1]) / (path[close_index+1][0]-path[close_index][0]+ 1e-10) )     
 

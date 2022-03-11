@@ -93,7 +93,7 @@ def odomfunc(odom):
 
 
 def my_mainfunc():
-	rospy.init_node('mpc_multipleShooting_pathTracking_carDemo', anonymous=True)
+	rospy.init_node('lqr_pathTracking_carDemo.py', anonymous=True)
 	rospy.Subscriber('/base_pose_ground_truth' , Odometry, odomfunc)            
 	rospy.Subscriber('/astroid_path', Path, pathfunc)
 
